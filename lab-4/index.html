@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Лабораторна робота №4-Форма</title>
+  </head>
+  <body>
+    <h1>Моя перша HTML-форма</h1>
+    <form method="get" action="https://httpbin.org/get">
+    <label>Ім’я:</label>
+       <input type="text" id="name" name="username" placeholder="Введіть ім’я..."><br><br>
+    <label>Дата народження</lible>
+       <input type="date" name="birthdate"><br><br>
+    <label>Iмейл:</label>
+       <input type="emeil" name="emeil" placeholder="Введіть ваш імейл..."><br><br>
+    <label>Повідомлення:</label>
+       <textarea rows="1" cols="30" name="comment" placeholder="Введіть ваш коментар..."></textarea></label><br><br>
+  <fieldset>
+    <legend>Ваші улюблені напої?</legend>
+     <label><input type="checkbox" name="drink" value="coffee"> Кава</label>
+     <label><input type="checkbox" name="drink" value="tea">Чай</label>
+     <label><input type="checkbox" name="drink" value="juice">Сік</label>
+     <label><input type="checkbox" name="drink" value="water">Вода</label> 
+  </fieldset><br>
+     <fieldset>
+      <legend>Моя національність:</legend>
+      <label><input type="radio" name="nation" value="ukrainian"> Українець</label>
+      <label><input type="radio" name="nation" value="polish"> Поляк</label>
+      <label><input type="radio" name="nation" value="other"> Інше</label>
+  </fieldset><br>
+      <button type="submit">Відправити</button>
+      <button type="reset">Очистити</button>
+  <hr>
+     <picture>
+      <source media="(max-width: 468px)" srcset="https://picsum.photos/300/500">
+      <source media="(min-width: 469px)" srcset="https://picsum.photos/1000/400">
+      <img src="https://picsum.photos/1000/400" alt="Приклад зображення">
+  </picture>
+  </body>           
+</html>     
